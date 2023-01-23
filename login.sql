@@ -1,0 +1,11 @@
+CREATE DATABASE login;
+
+USE login;
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nama_lengkap VARCHAR(255) NOT NULL,
+    tanggal_lahir DATE NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
